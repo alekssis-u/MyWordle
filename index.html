@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyWordle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Crafty+Girls&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>My Wordle</h1>
+    <h2>Can you guess a five letter word?</h2>
+    <div class="stars-container"></div>
+    
+    <div class="container">
+        <button  class="button" type="button" >
+            <a href="game.html" class="button-class">Play</a>
+        </button>
+        <button  class="button" id="openModal" type="button">How To Play</button>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-inner">
+            <button id="closeModal" class="buttonClose" >Close</button>
+
+           
+
+            <p>Goal: <br>Guess the 5-letter target word within 6 attempts.<br>
+                Feedback:<br>
+                Correct letter in the correct position: Green.<br>
+                Correct letter in the wrong position: Yellow.<br>
+                Incorrect letter: Gray.<br>
+                Input: <br>Each guess must be a valid 5-letter word.<br>
+                Strategy: <br>Use feedback from each guess to refine your next word.<br>
+                Win/Loss: <br>You win if you guess the word within 6 tries; otherwise, you lose.<br>
+                Happy playing! 😊</p>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
