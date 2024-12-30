@@ -1,0 +1,200 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url("images/back1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  justify-content: center; 
+    align-items: center; 
+}
+h1{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+  font-style: normal;
+  font-size: 120px;
+  text-align: center;
+  margin:0;
+}
+h2{
+    font-family: "Crafty Girls", serif;
+  font-weight: 20px;
+  font-style: normal;
+  text-align: center;
+}
+.stars-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.star {
+    position: absolute;
+    width: 70px; 
+    height: 80px;
+    background: url('images/white-stars.gif') no-repeat center/cover;
+    display: none;
+}
+.container {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button {
+    font-family: "Crafty Girls", serif;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    background-color: #9ab8ed;
+    color: #406bc1;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+    border: 2px solid #406bc1;
+}
+.button:active{
+    background-color:#406bc1;
+    color: #9ab8ed;
+    border: 2px solid #9ab8ed;
+} 
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+
+  
+a{
+    text-decoration: none;
+    color:  #406bc1;
+   
+}  
+.modal{
+    background-color: #9ab8ed;
+    color: #406bc1;
+    font-family: "Crafty Girls", serif;
+    font-weight: bolder;
+    width: 30%;
+    height: 50%;
+    margin: 15% 35%;
+    border-radius: 30px;
+
+    opacity:0;
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.buttonClose {
+    font-family: "Crafty Girls", serif;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+}
+#closeModal:hover{
+    color:  #406bc1;
+    background-color: #9ab8ed;
+    border: 3px solid #406bc1;
+}
+.modal.open{
+    opacity:1;
+    z-index:999;
+}
+.modal-inner{
+    margin: 0 20px;
+}
+#closeModal{
+    background-color:  #406bc1;
+    color: #9ab8ed;
+    width: 100px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    
+    
+    
+}
+
+
+@media screen and (max-width: 2000px) {
+    .modal{
+        background-color: #9ab8ed;
+        color: #406bc1;
+        font-family: "Crafty Girls", serif;
+        font-weight: bolder;
+        font-size: 15px;
+        width: 40%;
+        height: 60%;
+        margin: 15% 30%;
+        border-radius: 30px;
+    
+        opacity:0;
+        position: fixed;
+        top: 0;
+        bottom:0;
+        left:0;
+        right:0;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .modal-inner{
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .modal{
+        background-color: #9ab8ed;
+        color: #406bc1;
+        font-family: "Crafty Girls", serif;
+        font-weight: bolder;
+        font-size: 15px;
+        width: 80%;
+        height: 60%;
+        margin: 20% 10%;
+        border-radius: 30px;
+    
+        opacity:0;
+        position: fixed;
+        top: 0;
+        bottom:0;
+        left:0;
+        right:0;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .modal-inner{
+        margin: 10px 10px;
+    }
+}
