@@ -83,8 +83,8 @@ a{
     color: #406bc1;
     font-family: "Crafty Girls", serif;
     font-weight: bolder;
-    width: 30%;
-    height: 50%;
+    width: 100vw; /* Full viewport width */
+    height: 100vh;
     margin: 15% 35%;
     border-radius: 30px;
 
