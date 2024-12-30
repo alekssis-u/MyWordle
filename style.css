@@ -192,3 +192,32 @@ a{
         margin: 10px 10px;
     }
 }
+@media screen and (max-width: 600px) {
+    .modal{
+        background-color: #9ab8ed;
+        color: #406bc1;
+        font-family: "Crafty Girls", serif;
+        font-weight: bolder;
+        font-size: 10px;
+        width: 80%;
+        height: 80%;
+        margin: 10% 10%;
+        border-radius: 30px;
+    
+        opacity:0;
+        position: fixed;
+        top: 0;
+        bottom:0;
+        left:0;
+        right:0;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .modal-inner{
+        margin: 0 10px;
+    }
+}
